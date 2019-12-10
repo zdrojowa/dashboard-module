@@ -1,0 +1,43 @@
+{
+    "name": "zdrojowa/dashboardmodule",
+    "description": "",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Jakub Kosiński",
+            "email": "jakub.kosinski.99@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/zdrojowa/dashboardmodule",
+    "keywords": ["Laravel", "DashboardModule"],
+    "require": {
+        "illuminate/support": "~5",
+        "zdrojowa/cms-kernel": "^1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zdrojowa\\DashboardModule\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zdrojowa\\DashboardModule\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zdrojowa\\DashboardModule\\DashboardModuleServiceProvider"
+            ],
+            "aliases": {
+                "DashboardModule": "Zdrojowa\\DashboardModule\\Facades\\DashboardModule"
+            }
+        }
+    }
+}

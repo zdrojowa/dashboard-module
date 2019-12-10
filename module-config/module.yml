@@ -1,0 +1,7 @@
+version: 0.0.1
+name: DashboardModule
+
+aclAnchor: DashboardModule
+aclName: Kokpit
+
+routePrefix: DashboardModule
