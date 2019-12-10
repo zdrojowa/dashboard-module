@@ -1,7 +1,7 @@
 {
     "name": "zdrojowa/dashboardmodule",
     "description": "",
-    "license": "license",
+    "license": "MIT",
     "authors": [
         {
             "name": "Jakub Kosiński",
