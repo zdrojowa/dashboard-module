@@ -82,7 +82,7 @@
                                 @foreach($routesNames as $route)
                                     <tr>
                                         <td>{{$route->action['as']}}</td>
-                                        <td><code>{{implode($route->methods, ', ')}}</code></td>
+                                        <td><code>{{implode(', ', $route->methods)}}</code></td>
                                         <td>{{$route->uri}}</td>
                                         <td><code>{{$route->action['controller']}}</code></td>
                                     </tr>
