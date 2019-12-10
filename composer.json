@@ -11,7 +11,7 @@
     "homepage": "https://github.com/zdrojowa/dashboardmodule",
     "keywords": ["Laravel", "DashboardModule"],
     "require": {
-        "illuminate/support": "~5",
+        "illuminate/support": "^6.0",
         "zdrojowa/cms-kernel": "^2.0"
     },
     "require-dev": {
