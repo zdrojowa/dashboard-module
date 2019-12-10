@@ -22,12 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Zdrojowa\\DashboardModule\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Zdrojowa\\DashboardModule\\Tests\\": "tests"
+            "Selene\\Modules\\DashboardModule\\": "src/"
         }
     }
 }
