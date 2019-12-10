@@ -29,15 +29,5 @@
         "psr-4": {
             "Zdrojowa\\DashboardModule\\Tests\\": "tests"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Zdrojowa\\DashboardModule\\DashboardModuleServiceProvider"
-            ],
-            "aliases": {
-                "DashboardModule": "Zdrojowa\\DashboardModule\\Facades\\DashboardModule"
-            }
-        }
     }
 }
