@@ -175,3 +175,14 @@ $breadcrumb-custom-item-color: $text-muted;
 $breadcrumb-item-bg: #141414;
 
 // BREADCRUMBS //
+
+//TABS
+$nav-tabs-border-color: $border-color;
+$nav-tabs-link-bg: $content-bg;
+$nav-tabs-link-color: $body-color;
+$nav-tabs-link-hover-border-color: $nav-tabs-border-color $nav-tabs-border-color $nav-tabs-border-color;
+$nav-tabs-link-active-color: $body-color;
+$nav-tabs-link-active-bg: darken($content-bg, 5%);
+$nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-color $nav-tabs-link-active-bg;
+$nav-pills-custom-bg: #8489ab;
+//TABS
