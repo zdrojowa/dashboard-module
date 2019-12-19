@@ -362,8 +362,9 @@ $(function() {
 
             $.ajax({
                 url: url,
-                method: "DELETE",
+                method: "POST",
                 data: {
+                    "_method": "DELETE",
                     "_token": $('meta[name="csrf-token"]').attr("content")
                 },
                 success: function () {
