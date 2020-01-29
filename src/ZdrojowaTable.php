@@ -14,7 +14,12 @@ class ZdrojowaTable
 
         $this->totalFiltered = $this->builder->count();
         $this->page = (int) $request->input('pagination.page');
-        $this->perPage = (int) $request->input('pagination.perPage');
+        if($request->input('pagination.perPage') === 'all') {
+            $this->perPage = 'all';
+        }
+        else {
+            $this->perPage = (int)$request->input('pagination.perPage');
+        }
         $this->filters = $request->input('filters') ?? [];
         $this->columns = $request->input('columns') ?? [];
         $this->withoutSelect = $withoutSelect;
@@ -31,14 +36,12 @@ class ZdrojowaTable
     public function filter()
     {
         foreach ($this->filters as $column => $filter) {
-            if($filter['value'] === null) continue;
+            if ($filter['order']) {
+                $this->builder->orderBy($column, $filter['order']);
+            }
 
             if ($filter['value']) {
                 $this->builder->where($column, 'like', '%' . $filter['value'] . '%');
-            }
-
-            if ($filter['order']) {
-                $this->builder->orderBy($column, $filter['order']);
             }
         }
 
