@@ -124,9 +124,14 @@ class ZdrojowaHeader {
             this.th.removeClass('ZdrojowaTable--desc');
             this.th.addClass('ZdrojowaTable--asc');
         } else if(this.order === 'asc') {
-            this.order = "desc";
-            this.th.addClass('ZdrojowaTable--desc');
+            this.order = "normal";
+            this.th.addClass('ZdrojowaTable--normal');
             this.th.removeClass('ZdrojowaTable--asc');
+        }
+        else if(this.order === 'normal') {
+            this.order = "desc"
+            this.th.addClass('ZdrojowaTable--desc');
+            this.th.removeClass('ZdrojowaTable--normal');
         }
 
         this.handler();
