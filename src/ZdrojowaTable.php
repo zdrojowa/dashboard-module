@@ -37,11 +37,21 @@ class ZdrojowaTable
     {
         foreach ($this->filters as $column => $filter) {
             if ($filter['order']) {
-                $this->builder->orderBy($column, $filter['order']);
+                if($filter['order'] !== 'normal') {
+                    $this->builder->orderBy($column, $filter['order']);
+                }
             }
 
             if ($filter['value']) {
-                $this->builder->where($column, 'like', '%' . $filter['value'] . '%');
+                if($filter['value'] === '%%isNotNull%%') {
+                    $this->builder->whereNotNull($column);
+                }
+                elseif ($filter['value'] === '%%isNull%%') {
+                    $this->builder->whereNull($column);
+                }
+                else {
+                    $this->builder->where($column, 'like', '%' . $filter['value'] . '%');
+                }
             }
         }
 
