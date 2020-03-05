@@ -87,6 +87,12 @@
     }
   }
 
+  .ZdrojowaTable--normal {
+    svg {
+      opacity: 0;
+    }
+  }
+
   .ZdrojowaTable--table {
     thead {
       tr {
