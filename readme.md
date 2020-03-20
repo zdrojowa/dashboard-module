@@ -16,6 +16,10 @@ $ composer require zdrojowa/dashboardmodule
 ```
 
 ## Usage
+1. Add \Selene\Modules\DashboardModule\Providers\DashboardModuleServiceProvider::class in config/app.php 'providers'
+2. Add mix.module('DashboardModule', 'vendor/zdrojowa/dashboardmodule'); in webpack.mix.js
+3. php artisan vendor:publish --tag=public --force
+3. npm run dev
 
 ## Change log
 

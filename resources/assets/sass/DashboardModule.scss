@@ -1,4 +1,8 @@
+@import "sweetalert/dark";
+
 @import "nouislider/nouislider.min";
+
+@import "select2/core";
 
 @import "bootstrap/functions";
 @import "bootstrap/variables";
@@ -9,6 +13,8 @@
 
 @import "compass-mixins/lib/compass";
 @import "compass-mixins/lib/animate";
+
+@import "dropify/dropify";
 
 @import "mixins/cards";
 @import "mixins/flexbox";

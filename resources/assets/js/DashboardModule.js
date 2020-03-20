@@ -1,8 +1,21 @@
-//window.Swal = require('./sweetalert2.min');
+// window.$ = window.jQuery = jQuery = $ = require('./jquery');
+//
+// require('./jquery.mousewheel');
+//
+// require('./select2/select2.full.min');
+
+// require('./select2/select2/core');
+// require('./select2/select2/i18n/pl');
 
 require('./bootstrap.min.js');
+
+// require('./jquery-ui.min.js');
 require('./nouislider.min.js');
 require('./chosenjs.min.js');
+require('./dropify.js');
+
+window.Swal = require('./sweetalert2.all.js');
+
 require('./components/ZdrojowaTable/ZdrojowaTable');
 require('./components/CircleBar/script');
 
