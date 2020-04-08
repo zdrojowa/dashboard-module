@@ -8,4 +8,9 @@ All notable changes to `DashboardModule` will be documented in this file.
 - Everything
 
 ## Version 1.1.4
-For security issues changed asset path to local 
+For security issues changed asset path to local
+
+## Version 1.1.6
+- Scrypts & styles from NPM
+- Include in ZdrojowaTable row attribute id
+- Delete provider

@@ -15,11 +15,24 @@ Via Composer
 $ composer require zdrojowa/dashboardmodule
 ```
 
+NPM required:
+``` bash
+"@sweetalert2/theme-dark": "^2.1.0",
+"@sweetalert2/themes": "^2.1.0",
+"bootstrap": "4.4.1",
+"chosen-js": "1.8.7",
+"compass-mixins": "0.12.10",
+"dropify": "0.2.2",
+"jquery": "^3.4.1",
+"jquery-ui": "1.12.1",
+"nouislider": "14.2.0",
+"select2": "4.0.13",
+"sweetalert2": "^8.17.1",
+```
+
 ## Usage
-1. Add \Selene\Modules\DashboardModule\Providers\DashboardModuleServiceProvider::class in config/app.php 'providers'
-2. Add mix.module('DashboardModule', 'vendor/zdrojowa/dashboardmodule'); in webpack.mix.js
-3. php artisan vendor:publish --tag=public --force
-4. npm run dev
+1. Add mix.module('DashboardModule', 'vendor/zdrojowa/dashboardmodule'); in webpack.mix.js
+2. npm run dev
 
 ## Change log
 

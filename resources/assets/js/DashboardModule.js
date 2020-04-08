@@ -1,20 +1,16 @@
-// window.$ = window.jQuery = jQuery = $ = require('./jquery');
-//
-// require('./jquery.mousewheel');
-//
-// require('./select2/select2.full.min');
+window.$ = window.jQuery = jQuery = $ = require('jquery');
 
-// require('./select2/select2/core');
-// require('./select2/select2/i18n/pl');
+require('jquery-ui');
 
-require('./bootstrap.min.js');
+window.select2 = require('select2');
 
-// require('./jquery-ui.min.js');
-require('./nouislider.min.js');
-require('./chosenjs.min.js');
-require('./dropify.js');
+require('select2/dist/js/i18n/pl');
+require('bootstrap');
+require('nouislider');
+require('chosen-js');
+require('dropify');
 
-window.Swal = require('./sweetalert2.all.js');
+window.Swal = require('sweetalert2');
 
 require('./components/ZdrojowaTable/ZdrojowaTable');
 require('./components/CircleBar/script');

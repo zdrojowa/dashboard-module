@@ -19,10 +19,6 @@
     </div>
 </div>
 
-<script src="{{ asset('vendor/js/jquery.js') }}"></script>
-<script src="{{ asset('vendor/js/jquery-ui.min.js') }}"></script>
-<script src="{{ asset('vendor/js/select2.full.min.js') }}"></script>
-<script src="{{ asset('vendor/js/select2.pl.js') }}"></script>
 <script src="{{ mix('vendor/js/DashboardModule.js', '') }}"></script>
 
 @yield('javascripts')

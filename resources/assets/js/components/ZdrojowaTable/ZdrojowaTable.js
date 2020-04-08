@@ -221,11 +221,13 @@ class ZdrojowaTable {
 
             let rows = '';
             response.data.forEach((item) => {
-                let row = `<tr>`;
 
                 if(item['_id']) {
                     item['id'] = item['_id'];
                 }
+
+                let row = `<tr id="${item['id']}">`;
+
                 this.object.headers.forEach((header) => {
                     if(!item[header.ajax]) item[header.ajax] = "Brak";
                     if(!item[header.display]) item[header.display] = "Brak";
@@ -238,28 +240,28 @@ class ZdrojowaTable {
                     if(header.type === 'actions') {
                         row += `<td>`;
                         header.buttons.forEach(button => {
-                           const buttonClass = button.class ? button.class : '';
+                            const buttonClass = button.class ? button.class : '';
 
-                           if(!button.url) return;
-
-
-                           let url = button.url;
-                           const color = button.color ? button.color : 'primary';
-
-                           const icon = button.icon ? `<i class="${button.icon}"></i>` : '';
-                           let text = button.text ? button.text : '';
-
-                           const toReplace = getFromBetween.get(url, "%%", "%%");
-                           toReplace.forEach((column) => {
-                               url = url.replace(`%%${column}%%`, item[column]);
-                           });
+                            if(!button.url) return;
 
 
-                           if(text !== '' && icon !== '') {
-                               text = `<span class="ml-1">${text}</span>`
-                           }
+                            let url = button.url;
+                            const color = button.color ? button.color : 'primary';
 
-                           row += `<div class="ZdrojowaTable--action"><a href="${url}" class="btn btn-sm btn-${color} ${buttonClass}">${icon}${text}</a></div>`
+                            const icon = button.icon ? `<i class="${button.icon}"></i>` : '';
+                            let text = button.text ? button.text : '';
+
+                            const toReplace = getFromBetween.get(url, "%%", "%%");
+                            toReplace.forEach((column) => {
+                                url = url.replace(`%%${column}%%`, item[column]);
+                            });
+
+
+                            if(text !== '' && icon !== '') {
+                                text = `<span class="ml-1">${text}</span>`
+                            }
+
+                            row += `<div class="ZdrojowaTable--action"><a href="${url}" class="btn btn-sm btn-${color} ${buttonClass}">${icon}${text}</a></div>`
                         });
 
                         row += '</td>';
