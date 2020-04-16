@@ -14,3 +14,6 @@ For security issues changed asset path to local
 - Scrypts & styles from NPM
 - Include in ZdrojowaTable row attribute id
 - Delete provider
+
+## Version 1.1.7
+- Fix sortable
