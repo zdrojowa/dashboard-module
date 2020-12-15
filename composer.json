@@ -5,13 +5,16 @@
     "authors": [
         {
             "name": "Jakub Kosiński",
-            "email": "jakub.kosinski.99@gmail.com"
+            "email": "j.kosinski@zdrojowainvest.pl"
+        },
+        {
+            "name": "Alina Dawydowa",
+            "email": "a.dawydowa@zdrojowainvest.pl"
         }
     ],
     "homepage": "https://github.com/zdrojowa/dashboardmodule",
     "keywords": ["Laravel", "DashboardModule"],
     "require": {
-        "illuminate/support": "^6.0",
         "zdrojowa/cms-kernel": "^2.0"
     },
     "require-dev": {

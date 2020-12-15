@@ -17,3 +17,6 @@ For security issues changed asset path to local
 
 ## Version 1.1.7
 - Fix sortable
+
+## Version 1.1.8
+- Fix composer
