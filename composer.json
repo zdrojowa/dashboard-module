@@ -1,6 +1,6 @@
 {
     "name": "zdrojowa/dashboardmodule",
-    "description": "",
+    "description": "Dashboard",
     "license": "MIT",
     "authors": [
         {
@@ -15,13 +15,7 @@
     "homepage": "https://github.com/zdrojowa/dashboardmodule",
     "keywords": ["Laravel", "DashboardModule"],
     "require": {
-        "zdrojowa/cms-kernel": "^2.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~7.0",
-        "mockery/mockery": "^1.1",
-        "orchestra/testbench": "~3.0",
-        "sempro/phpunit-pretty-print": "^1.0"
+        "zdrojowa/cms-kernel": "^3.0"
     },
     "autoload": {
         "psr-4": {

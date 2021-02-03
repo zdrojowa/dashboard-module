@@ -1,20 +1,10 @@
-<nav class="sidebar">
-    <div class="sidebar--content">
-        <div class="sidebar--logo">
-            <img src="{{ asset('/vendor/img/DashboardModule/zdrojowa-invest-hotels.svg') }}" alt="">
-        </div>
-
-        <ul class="nav">
-            <li class="nav-item account">
-                <img src="{{ asset('/vendor/img/DashboardModule/icons/user.svg') }}" alt="avatar">
-                <p>{{Auth::user()->name}}</p>
-            </li>
-            <li class="nav-item nav-category">
-                <p class="navigation--title">Nawigacja</p>
-            </li>
-            @foreach($menu as $modulesMenu)
-                @include('DashboardModule::sidebar.modules-menu', ['modulesMenu' => $modulesMenu])
-            @endforeach
-        </ul>
-    </div>
-</nav>
+<b-button v-b-toggle.sidebar-1 variant="primary" class="mr-3">Sidebar</b-button>
+<b-sidebar id="sidebar-1" title="Sidebar" bg-variant="secondary" text-variant="light">
+    <b-list-group>
+        @foreach($menu as $modulesMenu)
+            @if(count($modulesMenu->GetChildren()) > 0)
+                @include('DashboardModule::sidebar.menu-items', ['menuItems' => $modulesMenu->getChildren()])
+            @endif
+        @endforeach
+    </b-list-group>
+</b-sidebar>

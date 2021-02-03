@@ -1,6 +1,6 @@
 index:
   path: '{dashboard}'
-  controller: 'Selene\Modules\DashboardModule\Http\Controller\DashboardController@index'
+  controller: 'Selene\Modules\DashboardModule\Http\Controllers\DashboardController@index'
   methods:
     - GET
   permission: DashboardModule

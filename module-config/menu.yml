@@ -1,5 +1,5 @@
 dashboard:
-  name: Kokpit
-  icon: mdi mdi-speedometer
+  name: Dashboard
+  icon: tv
   permission: DashboardModule.dashboard
   route: DashboardModule::index

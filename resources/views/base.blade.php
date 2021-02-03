@@ -12,14 +12,12 @@
 </head>
 <body>
 
-<div class="dashboard-container">
-    @yield('sidebar')
+<div id="app">
+    @yield('navbar')
     <div class="dashboard-content">
         @yield('content')
     </div>
 </div>
-
-<script src="{{ mix('vendor/js/DashboardModule.js', '') }}"></script>
 
 @yield('javascripts')
 </body>

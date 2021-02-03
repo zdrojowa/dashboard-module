@@ -17,17 +17,11 @@ $ composer require zdrojowa/dashboardmodule
 
 NPM required:
 ``` bash
-"@sweetalert2/theme-dark": "^2.1.0",
-"@sweetalert2/themes": "^2.1.0",
-"bootstrap": "4.4.1",
-"chosen-js": "1.8.7",
-"compass-mixins": "0.12.10",
-"dropify": "0.2.2",
-"jquery": "^3.4.1",
-"jquery-ui": "1.12.1",
-"nouislider": "14.2.0",
-"select2": "4.0.13",
-"sweetalert2": "^8.17.1",
+"axios": "^0.19",
+"bootstrap": "^4.5.3",
+"bootstrap-vue": "2.16.0",
+"vue": "^2.6.10",
+"vue-router": "^3.4.9",
 ```
 
 ## Usage

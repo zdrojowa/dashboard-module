@@ -1,8 +1,0 @@
-.dashboard-content {
-  width: calc(100vw - #{$sidebar-width});
-  margin-left: $sidebar-width;
-
-  .content-wrapper {
-    padding: $wrapper-padding;
-  }
-}

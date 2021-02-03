@@ -20,3 +20,6 @@ For security issues changed asset path to local
 
 ## Version 1.1.8
 - Fix composer
+
+## Version 2.0.0
+- Laravel 8 + Vue

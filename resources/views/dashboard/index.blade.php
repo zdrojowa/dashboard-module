@@ -1,13 +1,13 @@
 @extends('DashboardModule::base')
 
-@section('title','Dashboard')
+@section('title', $title ?? '')
 
 @section('stylesheets')
     @parent
 @endsection
 
-@section('sidebar')
-    @include('DashboardModule::sidebar.index', ['menu' => Selene\Support\Facades\MenuRepository::getPresences()])
+@section('navbar')
+    @include('DashboardModule::navbar.index', ['menu' => Selene\Support\Facades\MenuRepository::getPresences()])
 @endsection
 
 @section('content')

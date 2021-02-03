@@ -1,0 +1,5 @@
+api.routes:
+  path: /routes
+  controller: Selene\Modules\DashboardModule\Http\Controllers\ApiController@routes
+  methods:
+    - GET
