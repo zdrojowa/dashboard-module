@@ -4,7 +4,7 @@
 
     <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-            <b-nav-item>{{ $title ?? '' }}</b-nav-item>
+            <b-nav-item active>{{ $title ?? '' }}</b-nav-item>
             @yield('navbar-links')
         </b-navbar-nav>
 

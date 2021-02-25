@@ -23,3 +23,6 @@ For security issues changed asset path to local
 
 ## Version 2.0.0
 - Laravel 8 + Vue
+
+## Version 2.0.1
+- Active title
